@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Child</title>
+	<link rel="stylesheet" href="child.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+<div class="topin">
+	<h3 class="head">
+		My Child My Future
+	</h3>
+</div>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(p1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p7.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p8.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p9.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(p10.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="../package/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+
+<div class="row">
+	<div class="column side"></div>
+	<div class="column middle">
+		<div class="card1">
+			<span class="cali">A</span> 
+			lot of people don't know what i child is A lot of people don't know what i child is
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			
+			A lot of people don't know what i child is A lot of people don't know what i child is
+			
+			<div class="quota">
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+				Everything can work for us if we follo hard our child.
+			</div>
+		</div>
+	</div>
+	<div class="column side"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
